@@ -8,6 +8,7 @@ body {
     line-height: 1.6;
     color: #333;
     font-family: 'Fredoka', sans-serif;
+    background-color: #ffeedf;
 }
 
 .container{
@@ -22,6 +23,7 @@ body {
     padding: 0.5rem 2rem 0;
     top: 0;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
 }
 
 .nav{
@@ -58,8 +60,6 @@ body {
     width: 12rem;
     height: 3rem;
 }
-
-
 
 .botao{
     padding: 0.8rem;
@@ -98,10 +98,6 @@ body {
 
 /* IZADORA */
 
-.servicos{
-    background-color: #f9f9f9;
-}
-
 .section-title {
     text-align: center;
     font-size: 2.5rem;
@@ -110,9 +106,6 @@ body {
 }
 
 .foto-card{
-    width: 100%;
-    max-width: 300px;
-    height: auto;
     display: block;
     margin: 0 auto;
 }
@@ -125,7 +118,7 @@ body {
 }
 
 .card{
-    background-color: rgb(255, 233, 212);
+    background-color: rgb(255, 214, 175);
     border-radius: 10px;
     overflow: hidden; 
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
@@ -133,24 +126,99 @@ body {
     min-width: 400px;
     max-width: 350px;
     transition: transform 0.3s;
-    padding: 0 10px;
+}
+
+.card:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    transform: translateY(-5px);
 }
 
 .container{
     padding: 1rem;
 }
 
+.conteudo-card{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    text-align: justify;
+}
+
 .conteudo-card h3{
     color: #68280e;
-    font-size: 1.7rem;
+    font-size: 2rem;
+    margin: 0;
+    text-align: center;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.conteudo-card img{
+    width: 300px;
+    height: 200px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #8a4c34;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+.valor{
+    color:#68280e;
+    margin-top: 3px;
+}
+
+.info-flex{
+    display: flex;
+    gap: 3rem;
+    align-items: center;
 }
 
 .info{
     padding: 5rem;
 }
 
-.info-texto ul li{
-    list-style: none; 
+.info-imagem{
+    flex: 1;
+}
+
+.info-imagem img{
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.247);
+}
+
+.info-texto{
+    display: flex;
+    flex-direction: column;
+    flex: 1; 
+    gap: 1rem;
+}
+
+.info-texto p{
+    color: #666666;
+    font-size: 1.1rem;
+}
+
+.info-texto h2{
+    font-size: 2.5rem;
+    color: #68280e;
+    font-weight: bold;
+}
+
+.beneficios{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.beneficios p{
+    font-size: 1.7rem;
+    color: #68280e;
 }
 
 /* FOOTER */
