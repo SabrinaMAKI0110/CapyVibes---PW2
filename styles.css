@@ -10,31 +10,76 @@ body {
     font-family: 'Fredoka', sans-serif;
 }
 
-.header{
-    background-color: #b9977c;
+.container{
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0 10px;
 }
 
-.foto{
+.header{
+    background-color: #8a4c34;
+    position: sticky;
+    padding: 0.5rem 2rem 0;
+    top: 0;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu{
+    display: flex;
+    gap: 2.5rem;
+}
+
+.menu a{
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+    font-size: 1.3rem;
+}
+
+.menu a:hover{
+    color: #b6e5e5;
+}
+
+/* .foto{
     display: flex;
     justify-content: center;
     align-items: center; 
-    width: 20rem;
-    height: 20rem;
-}
+    width: 10rem;
+    height: 10rem;
+} */
 
 .logo{
-    display: flex;
-    justify-content: center;
-    align-items: center; 
+    width: 12rem;
+    height: 3rem;
 }
 
-img{
-    width: 300px;
-    height: auto;
+
+
+.botao{
+    padding: 0.8rem;
+    color: black;
+    border-radius: 2rem;
+    border-color: #598e8e;
+    background-color: #b6e5e5;
+    font-size: 1rem;
+    font-family: 'Lucida Sans Regular';
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: scale 0.4s;
+}
+
+.botao:hover{
+    scale: 1.1;
 }
 
 .hero-section{
-    background: linear-gradient(rgba(44, 24, 26, 0.7), rgba(44, 24, 26, 0.3)), url("imagens/fundo.jpg");
+    background: linear-gradient(rgba(44, 24, 26, 0.6), rgba(44, 24, 26, 0.3)), url("imagens/fundo.jpg");
     background-size: cover;
     background-position: center;
     color: white;
@@ -42,9 +87,10 @@ img{
     align-items: center;
     justify-content: center;
     text-align: center;
+    height: 630px;
 }
 
-.conteudo-hero{
+.conteudo-hero {
 
 }
 
@@ -96,4 +142,36 @@ img{
 .conteudo-card h3{
     color: #68280e;
     font-size: 1.7rem;
+}
+
+.rodape{
+    background-color: #8a4c34;
+    padding: 1rem;
+}
+
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+}
+
+.footer-section{
+    flex: 1;
+    min-width: 50px;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.footer-section h4{
+    margin-bottom: 0.5rem;
+    color: #eaaf76;
+}
+
+.footer-bottom{
+    text-align: center;
+    border-top: 1.5px solid #b9977c;
+    color: white;
+    padding-top: 2rem;
 }
