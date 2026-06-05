@@ -114,7 +114,31 @@
         </section>
 
         <!-- FORMULÁRIO -->
-        <form action=""></form>
+        <form action="dadosForm.html" method="post" class="formulario">
+
+            <h2>Cadastro - CapyVibes</h2>
+            <label><strong>Nome completo:</strong></label>
+            <input type="text" name="Nome" required><br>
+            <label><strong>Email:</strong></label>
+            <input type="text" name="Email" required><br>
+            <label><strong>Telefone:</strong></label>
+            <input type="number" name="Telefone" required><br>
+            <label><strong>Qual serviço deseja contratar?</strong></label><br>
+            <input type="checkbox" name="meditacao">Meditação Premium<br>
+            <input type="checkbox" name="carro">Capivara Express<br>
+            <input type="checkbox" name="cafe">CapyCafé<br>
+            <label><strong>Data desejada:</strong></label>
+            <input type="date" name="data" id="data"><br>
+            <label><strong>Horário:</strong></label>
+            <input type="time" name="hora" id="horario"><br>
+            <label><strong>Comentário:</strong></label><br>
+              <textarea id="comentario" rows="3" cols="30" name="comentário"></textarea><br>
+            <label><strong>Termos:</strong></label><br>
+            <input type="checkbox" name="termo" id="termos" required><label>Concordo com os termos de uso e política de privacidade</label><br>
+
+            <button type="submit" class="btn_form">Quero relaxar com uma capivara🦦</button><br>
+            <button type="reset" class="btn_form">Limpar cadastro🗑️</button>
+        </form>
 
     </main>
 

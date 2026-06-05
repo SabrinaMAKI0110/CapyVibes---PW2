@@ -69,9 +69,10 @@ body {
     background-color: #b6e5e5;
     font-size: 1rem;
     font-family: 'Lucida Sans Regular';
-    margin-top: 1rem;
+    margin-top: 2rem;
     cursor: pointer;
     transition: scale 0.4s;
+    border-width: 0.2rem;
 }
 
 .botao:hover{
@@ -87,11 +88,11 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
-    height: 630px;
+    height: 655px;
 }
 
-.conteudo-hero {
-
+.conteudo-hero h1{
+    margin-bottom: 3rem;
 }
 
 
@@ -136,13 +137,23 @@ body {
 }
 
 .container{
-    padding: 1.5rem;
+    padding: 1rem;
 }
 
 .conteudo-card h3{
     color: #68280e;
     font-size: 1.7rem;
 }
+
+.info{
+    padding: 5rem;
+}
+
+.info-texto ul li{
+    list-style: none; 
+}
+
+/* FOOTER */
 
 .rodape{
     background-color: #8a4c34;
@@ -162,6 +173,7 @@ body {
     min-width: 50px;
     color: white;
     margin-bottom: 1rem;
+    margin-left: 5rem;
 }
 
 .footer-section h4{
@@ -174,4 +186,57 @@ body {
     border-top: 1.5px solid #b9977c;
     color: white;
     padding-top: 2rem;
+}
+
+
+/* FORMULÁRIO */
+
+.formulario{
+    background-color: #b8caca;
+    padding: 25px;
+    border-radius: 15px;
+    max-width: 500px;
+    margin: 2rem;
+}
+
+button[type="submit"] {
+    background-color: #b9977c;
+    color: black;
+    font-weight: bold;
+    border-radius: 20px;
+    padding: 0.2rem 0.6rem;
+    margin-bottom: 0.5rem;  
+}
+        
+button[type="reset"] {
+    background-color: #b9977c;
+    color: black;
+    font-weight: bold;
+    border-radius: 20px;
+    padding: 0.2rem 0.6rem;  
+}
+
+#termos{
+    margin-bottom: 3rem;
+}
+
+.formulario input{
+    margin-bottom: 0.7rem;
+}
+
+#comentario{
+    margin-bottom: 1.5rem;
+}
+
+#horario{
+    margin-bottom: 1rem;
+}
+
+#data{
+    margin-bottom: 1.3rem;
+    margin-top: 1rem;
+}
+
+.formulario h2{
+    margin-bottom: 1.5rem;
 }
