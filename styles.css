@@ -1,3 +1,5 @@
+/* HEADER e NAV */
+
 *{
     margin: 0;
     padding: 0;
@@ -12,7 +14,7 @@ body {
 }
 
 .container{
-    max-width: 1500px;
+    max-width: 1400px;
     margin: 0 auto;
     padding: 1rem;
 }
@@ -48,13 +50,7 @@ body {
     color: #b6e5e5;
 }
 
-/* .foto{
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    width: 10rem;
-    height: 10rem;
-} */
+/* HERO SECTION */
 
 .logo{
     width: 12rem;
@@ -73,6 +69,7 @@ body {
     cursor: pointer;
     transition: scale 0.4s;
     border-width: 0.2rem;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
 .botao:hover{
@@ -88,21 +85,21 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
-    height: 655px;
+    height: 730px;
 }
 
 .conteudo-hero h1{
     margin-bottom: 3rem;
 }
 
-
-/* IZADORA */
+/* SERVIÇOS */
 
 .section-title {
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 2rem;
     color: #68280e;
+    margin-top: 1.5rem;
 }
 
 .foto-card{
@@ -134,8 +131,7 @@ body {
 }
 
 .conteudo-card{
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 0 1.6rem 0 1.6rem;
     padding-bottom: 10px;
     display: flex;
     flex-direction: column;
@@ -162,50 +158,66 @@ body {
     margin-bottom: 10px;
 }
 
+.conteudo-card p{
+    margin-top: 0.7rem;
+}
+
 .valor{
-    color:#000000;
-    margin-top: 3px;
-}
-
-.info-flex{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 3rem;
-    align-items: flex-start;
-}
-
-.info{
-    padding: 2rem 1.5rem;
-    padding-bottom: 0;
-}
-
-.info-imagem{
-    flex: 1;
-}
-
-.info-imagem img{
-    width: 100%;
-    border-radius: 15px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.247);
-}
-
-.info-texto{
-    display: flex;
-    flex-direction: column;
-    flex: 1; 
-    gap: 1rem;
-}
-
-.info-texto p{
-    color: #666666;
-    font-size: 1.1rem;
-}
-
-.info-texto h2{
-    font-size: 2.5rem;
-    color: #68280e;
     font-weight: bold;
+    color:#363636;
+    padding: 1rem 0 0 0;
+    font-size: 1.3rem;
 }
+
+/* PROMOCÕES */
+.promo-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #68280e;
+    margin-top: 1.5rem;
+}
+
+.promocoes{
+    padding: 2rem 0 1.5rem 0;
+}
+
+.img-promo{
+    max-width:650px;
+    max-height: 550px;
+    display: block;
+}
+
+.promo-cards{
+    position: relative;
+    margin: auto;
+}
+
+.texto-promo{
+    position: absolute;
+    color: #333;
+    font-size: 1.5rem;
+    bottom: 15rem;
+}
+
+.texto-promo h4{
+    text-align: center;
+}
+/* daqui pra cima é agrupamentos, generaliza */
+
+.promo1{
+    transform: rotate(-2deg) translateX(-6rem);
+}
+
+.promo2{
+    
+}
+
+.promo3{
+    
+}
+
+/* BENEFICIOS */
 
 .beneficios{
     display: flex;
@@ -217,11 +229,13 @@ body {
 .beneficios h2{
     font-size: 2.5rem;
     color: #68280e;
+    margin-top: 2rem;
 }
 
 .beneficios li{
     font-size: 1.2rem;
     margin-top: 8px;
+    margin-left: 1.7rem;
 }
 
 .info-beneficios{
@@ -229,6 +243,10 @@ body {
     flex-wrap: wrap;
     gap: 3rem;
     margin-top: 1.5rem;
+}
+
+.info-beneficios-section{
+    padding: 0 1.5rem 2rem;
 }
 
 .info-imagem2{
@@ -239,6 +257,7 @@ body {
     width: 100%;
     border-radius: 15px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.247);
+    margin-top: 2rem;
 }
 
 .lista-beneficios{
@@ -255,7 +274,8 @@ body {
     text-align: center;
     font-size: 2.6rem;
     color: #68280e;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
+    margin-top: 0.5rem;
 }
 
 .avaliacoes{
@@ -278,6 +298,7 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    margin-bottom: 3rem;
 }
 
 .avaliacao p{
@@ -315,6 +336,154 @@ body {
     margin-top: 15px;
 }
 
+/* DUVIDAS - FAQ */
+
+
+/* SOBRE A EMRPRESA */
+.info{
+    padding: 2rem 1.5rem;
+    padding-bottom: 0;
+}
+
+.info-flex{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    align-items: flex-start;
+}
+
+.info-imagem{
+    flex: 1;
+}
+
+.info-imagem img{
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.247);
+}
+
+.info-texto{
+    display: flex;
+    flex-direction: column;
+    flex: 1; 
+    gap: 1rem;
+}
+
+.info-texto p{
+    color: #666666;
+    font-size: 1.1rem;
+}
+
+.info-texto h2{
+    font-size: 2.5rem;
+    color: #68280e;
+    font-weight: bold;
+}
+
+/* FORMULÁRIO */
+
+.formulario{
+    background-color: #b8caca;
+    padding: 25px;
+    border-radius: 15px;
+    max-width: 500px;
+    margin: 2rem auto; 
+    
+}
+
+button[type="submit"] {
+    background-color: #b9977c;
+    color: black;
+    font-weight: bold;
+    border-radius: 20px;
+    padding: 0.2rem 0.6rem;
+    margin-bottom: 0.5rem;  
+}
+        
+button[type="reset"] {
+    background-color: #b9977c;
+    color: black;
+    font-weight: bold;
+    border-radius: 20px;
+    padding: 0.2rem 0.6rem;  
+}
+
+#termos{
+    margin-bottom: 3rem;
+    height: 1rem;
+    width: 1rem;
+    margin-right: 0.5rem;
+}
+
+.formulario input{
+    margin-bottom: 0.7rem;
+    border-radius: 8px;
+}
+
+#comentario{
+    margin-bottom: 1.5rem;
+}
+
+#horario{
+    margin-bottom: 1rem;
+}
+
+#data{
+    margin-bottom: 1.3rem;
+    margin-top: 1rem;
+}
+
+.formulario h2{
+    margin-bottom: 1.5rem;
+}
+
+.formulario textarea{
+    border-radius: 8px;
+}
+
+#caixa-e{
+    height: 1.4rem;
+    width: 15rem;
+    padding: 0 0 0 0.5rem;
+}
+
+#caixa{
+    height: 1rem;
+    width: 1rem;
+    margin-right: 0.5rem;
+}
+
+/* BOTÃO DE VOZ E LIBRAS */
+.btn-ajuda{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    border-radius: 20rem;
+    z-index: 100;
+    border: none;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.5);
+    cursor: pointer;
+    font-size: 2rem;
+    background-color: #62504b;
+    transition: background-color 0.3s;
+    transition: scale 0.4s;
+}
+
+.btn-ajuda:hover{
+    background-color: #6f8158;
+    scale: 1.2;
+}
+
+.voz{
+    bottom: 1.4rem;
+    right: 1rem;
+}
+
+.libras{
+    bottom: 5.4rem;
+    right: 1rem;
+}
+
 /* FOOTER */
 
 .rodape{
@@ -350,56 +519,6 @@ body {
     padding-top: 2rem;
 }
 
-
-/* FORMULÁRIO */
-
-.formulario{
-    background-color: #b8caca;
-    padding: 25px;
-    border-radius: 15px;
-    max-width: 500px;
-    margin: 2rem auto; 
-    
-}
-
-button[type="submit"] {
-    background-color: #b9977c;
-    color: black;
-    font-weight: bold;
-    border-radius: 20px;
-    padding: 0.2rem 0.6rem;
-    margin-bottom: 0.5rem;  
-}
-        
-button[type="reset"] {
-    background-color: #b9977c;
-    color: black;
-    font-weight: bold;
-    border-radius: 20px;
-    padding: 0.2rem 0.6rem;  
-}
-
-#termos{
-    margin-bottom: 3rem;
-}
-
-.formulario input{
-    margin-bottom: 0.7rem;
-}
-
-#comentario{
-    margin-bottom: 1.5rem;
-}
-
-#horario{
-    margin-bottom: 1rem;
-}
-
-#data{
-    margin-bottom: 1.3rem;
-    margin-top: 1rem;
-}
-
-.formulario h2{
-    margin-bottom: 1.5rem;
+.redes{
+    text-decoration: underline;
 }
