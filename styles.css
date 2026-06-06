@@ -14,7 +14,7 @@ body {
 .container{
     max-width: 1500px;
     margin: 0 auto;
-    padding: 0 10px;
+    padding: 1rem;
 }
 
 .header{
@@ -123,18 +123,14 @@ body {
     overflow: hidden; 
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     flex: 1; 
-    min-width: 400px;
-    max-width: 350px;
+    min-width: 350px;
+    max-width: 400px;
     transition: transform 0.3s;
 }
 
 .card:hover {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
     transform: translateY(-5px);
-}
-
-.container{
-    padding: 1rem;
 }
 
 .conteudo-card{
@@ -167,18 +163,20 @@ body {
 }
 
 .valor{
-    color:#68280e;
+    color:#000000;
     margin-top: 3px;
 }
 
 .info-flex{
     display: flex;
+    flex-wrap: wrap;
     gap: 3rem;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .info{
-    padding: 5rem;
+    padding: 2rem 1.5rem;
+    padding-bottom: 0;
 }
 
 .info-imagem{
@@ -210,15 +208,111 @@ body {
 }
 
 .beneficios{
-    margin-top: 1rem;
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+    flex: 1;
 }
 
-.beneficios p{
-    font-size: 1.7rem;
+.beneficios h2{
+    font-size: 2.5rem;
     color: #68280e;
+}
+
+.beneficios li{
+    font-size: 1.2rem;
+    margin-top: 8px;
+}
+
+.info-beneficios{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    margin-top: 1.5rem;
+}
+
+.info-imagem2{
+    flex: 1;
+}
+
+.info-imagem2 img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.247);
+}
+
+.lista-beneficios{
+    margin-top: 20px;
+}
+
+/*AVALIAÇÕES DOS CLIENTES*/
+
+.area-avaliacoes{
+    flex-wrap: wrap;
+}
+
+.area-avaliacoes h2{
+    text-align: center;
+    font-size: 2.6rem;
+    color: #68280e;
+    margin-bottom: 15px;
+}
+
+.avaliacoes{
+    display: flex;
+    flex-direction: row;
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.avaliacao{
+    background-color:  rgb(255, 214, 175);
+    border-radius: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    flex: 1;
+    max-width: 300px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.avaliacao p{
+    margin: 5px 10px;
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+.nome-cliente{
+    font-weight: bold;
+    margin-top: auto;
+}
+
+.foto-cliente{
+    flex: 1
+}
+
+.foto-cliente img{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    border-width: 3px;
+    border-style: solid;
+    border-color: #8a4c34;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.247);
+    margin-top: 5px;
+    object-fit: cover;
+}
+
+.call{
+    text-align: center;
+    font-size: 2.6rem;
+    color: #68280e;
+    margin-bottom: 10px;
+    margin-top: 15px;
 }
 
 /* FOOTER */
@@ -264,7 +358,8 @@ body {
     padding: 25px;
     border-radius: 15px;
     max-width: 500px;
-    margin: 2rem;
+    margin: 2rem auto; 
+    
 }
 
 button[type="submit"] {
