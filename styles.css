@@ -85,7 +85,7 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
-    height: 730px;
+    height: 650px;
 }
 
 .conteudo-hero h1{
@@ -173,49 +173,19 @@ body {
 .promo-title {
     text-align: center;
     font-size: 2.5rem;
-    margin-bottom: 1rem;
     color: #68280e;
-    margin-top: 1.5rem;
+    margin-top: 1rem;
 }
 
 .promocoes{
-    padding: 2rem 0 1.5rem 0;
+    padding: 1.5rem 0 1rem 0;
 }
 
 .img-promo{
-    max-width:650px;
+    max-width: 650px;
     max-height: 550px;
-    display: block;
 }
 
-.promo-cards{
-    position: relative;
-    margin: auto;
-}
-
-.texto-promo{
-    position: absolute;
-    color: #333;
-    font-size: 1.5rem;
-    bottom: 15rem;
-}
-
-.texto-promo h4{
-    text-align: center;
-}
-/* daqui pra cima é agrupamentos, generaliza */
-
-.promo1{
-    transform: rotate(-2deg) translateX(-6rem);
-}
-
-.promo2{
-    
-}
-
-.promo3{
-    
-}
 
 /* BENEFICIOS */
 
@@ -333,7 +303,7 @@ body {
     font-size: 2.6rem;
     color: #68280e;
     margin-bottom: 10px;
-    margin-top: 15px;
+    margin-top: 30px;
 }
 
 /* DUVIDAS - FAQ */
