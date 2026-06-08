@@ -14,7 +14,7 @@ body {
 }
 
 .container{
-    max-width: 1400px;
+    max-width: 1450px;
     margin: 0 auto;
     padding: 1rem;
 }
@@ -207,7 +207,7 @@ body {
 }
 
 .beneficios li{
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     margin-top: 8px;
     margin-left: 1.7rem;
 }
@@ -311,6 +311,49 @@ body {
 }
 
 /* DUVIDAS - FAQ */
+.duvidas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.perg-resp{
+    text-align: center;
+    font-size: 1.3rem;
+    width: 80rem;
+    height: 40rem;
+    background-color: #dbc3b1;
+    border-radius: 2rem;
+    box-shadow: 0 4px 6px rgba(77, 77, 77, 0.5);
+    padding: 3rem;
+}
+
+.resposta{
+    height: 4rem;
+    width: 75rem;
+    background-color: #f8f8f8;
+    border-color: #333;
+    border-radius: 1rem;
+    padding: 1rem;
+    border-width: 2px;
+    border-style: solid;
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+.perguntas{
+    margin-bottom: 0.6rem;
+    text-align: left;
+}
+
+.duv-titulo{
+    text-align: center;
+    font-size: 2.6rem;
+    color: #68280e;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
 
 
 /* SOBRE A EMRPRESA */
@@ -345,7 +388,7 @@ body {
 
 .info-texto p{
     color: #666666;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
 }
 
 .info-texto h2{
