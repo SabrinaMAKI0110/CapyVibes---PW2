@@ -14,7 +14,7 @@ body {
 }
 
 .container{
-    max-width: 1450px;
+    max-width: 1600px;
     margin: 0 auto;
     padding: 1rem;
 }
@@ -160,11 +160,12 @@ body {
 
 .conteudo-card p{
     margin-top: 0.7rem;
+    font-weight: bold;
 }
 
 .valor{
     font-weight: bold;
-    color:#363636;
+    color:#8a4c34;
     padding: 1rem 0 0 0;
     font-size: 1.3rem;
 }
@@ -403,9 +404,13 @@ body {
     background-color: #b8caca;
     padding: 25px;
     border-radius: 15px;
-    max-width: 500px;
+    max-width: 1000px;
     margin: 2rem auto; 
     
+}
+
+.formulario label{
+    font-size: 1.5rem;
 }
 
 button[type="submit"] {
