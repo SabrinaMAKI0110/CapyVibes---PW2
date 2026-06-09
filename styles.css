@@ -184,11 +184,6 @@ body {
     padding: 1.5rem 0 1rem 0;
 }
 
-.img-promo{
-    max-width: 650px;
-    max-height: 550px;
-}
-
 .promo-title {
     text-align: center;
     font-size: 2.5rem;
@@ -196,10 +191,58 @@ body {
     margin-top: 1rem;
 }
 
-.texto-promo{
-    font-size: 1.4rem;
+.promo-cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
 }
 
+.promo-card1 {
+    margin-right: -240px;
+    margin-bottom: 50px;
+    position: relative;
+    transform: rotate(-5deg);
+}
+
+.promo-card2 {
+    margin-right: -250px;
+    position: relative;
+    transform: rotate(0deg);
+    z-index: 300;
+}
+
+.promo-card3 {
+    margin-right: 15px;
+    margin-bottom: 50px;
+    position: relative;
+    transform: rotate(5deg);
+}
+
+.texto-promo{
+    position: absolute; 
+    bottom: 200px;
+    left: 150px;
+    text-align: center;
+}
+
+.promo-card1 img {
+    display: block;
+    width: 610px;
+    height: auto;
+}
+
+.promo-card2 img {
+    display: block;
+    width: 630px;
+    height: auto;
+}
+
+.promo-card3 img {
+    display: block;
+    width: 610px;
+    height: auto;
+}
 
 /* BENEFICIOS */
 
