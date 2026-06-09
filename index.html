@@ -65,7 +65,7 @@
                         <div class="conteudo-card">
                             <h3>Capivara Express</h3>
                             <img class="foto-card" src="imagens/express.png">
-                            <p>Receba uma capivara na sua casa e passe um tempo com ela para relaxar, você pode levá-la para passear e alimentar </p>
+                            <p>Receba uma capivara na sua casa e passe um tempo com ela para relaxar, você pode levá-la para passear e alimentar.</p>
                             <span class="valor">3 horas / R$99,99</span>
                         </div>
                     </div>
@@ -73,7 +73,7 @@
                     <div class="card">
                         <div class="conteudo-card">
                             <h3>CapyCafé</h3>
-                            <img class="foto-card" src="imagens/CapyCafe.jpg">
+                            <img class="foto-card" src="imagens/CapyCafé-novo.png">
                             <p>Nossa unidade possui uma área de alimentação na qual você pode comer enquanto faz carinho nas capivaras (e até alimentá-las).</p>
                             <span class="valor">*Serviço liberado ao consumir no local</span>
                         </div>
@@ -82,9 +82,10 @@
                     <div class="card">
                         <div class="conteudo-card">
                             <h3>CapyPortrait</h3>
-                            <img class="foto-card" src="imagens/CapyCafe.jpg">
-                            <p>idodsoivoisvoisoi</p>
-                            <span class="valor">*Serviço liberado ao consumir no local</span>
+                            <img class="foto-card" src="imagens/CapyPortrait.jpg">
+                            <p>No CapyVibes temos concursos de desenhos de capivaras, no qual você recebe os
+                            materiais de pintura, compete com outras pessoas e concorre a brindes.</p>
+                            <span class="valor">*R$10,00 pela participação</span>
                         </div>
                     </div>
 
@@ -170,7 +171,7 @@
                         </div>
                         <p>⭐⭐⭐⭐⭐</p>
                         <p>"Foi uma das experiências mais relaxantes da minha vida! As capivaras são muito dóceis."</p>
-                        <p class="nome-cliente">- Maria Fernanda</p>
+                        <p class="nome-cliente">- Maria Fernanda <p class="data-hora">(20/09/2025 - 22:00)</p></p>
                     </div>
 
                     <div class="avaliacao">
@@ -178,8 +179,8 @@
                             <img src="imagens/avaliacao-joao.png">
                         </div>
                         <p>⭐⭐⭐⭐</p>
-                        <p>"Eu estava muito estressado com a rotina e isso me ajudou demais. Recomendo muito!"</p>
-                        <p class="nome-cliente">- João Pedro</p>
+                        <p>"Eu estava muito estressado com a rotina e isso me ajudou demais. Recomendo muito, irei alugar mais vezes!"</p>
+                        <p class="nome-cliente">- João Pedro <p class="data-hora">(28/01/2024 - 13:57)</p></p>
                     </div>
 
                     <div class="avaliacao">
@@ -188,7 +189,7 @@
                         </div>
                         <p>⭐⭐⭐⭐⭐</p>
                         <p>"Ambiente tranquilo, organizado e cheio de energia boa. Voltarei com certeza!"</p>
-                        <p class="nome-cliente">- Ana Clara</p>
+                        <p class="nome-cliente">- Ana Clara <p class="data-hora">(17/08/2026 - 06:07)</p></p>
                     </div>
 
                     <div class="avaliacao">
@@ -197,7 +198,7 @@
                         </div>
                         <p>⭐⭐⭐⭐⭐</p>
                         <p>"Que experiência maravilhosa! Meu filho amou passar um tempo com as capivaras."</p>
-                        <p class="nome-cliente">- Luciana Vieira</p>
+                        <p class="nome-cliente">- Luciana Vieira <p class="data-hora">(14/05/2025 - 13:09)</p></p>
                     </div>
 
                 </div>
@@ -220,6 +221,15 @@
                 </div>
 
                 <div class="perguntas">
+                    <p><strong>Tenho restos de verduras em casa, posso dar a filhote de capivara?
+                    Estou com ela e parece estar com fome</strong></p>
+                </div>
+                <div class="resposta resposta-g">
+                    <p>Não, pois elas tem alimentos específicos e foi dado uma mochila com o alimento,
+                    quando o aparelho apitar, significa que ela tá com fome, aí você dá.</p>
+                </div>
+
+                <div class="perguntas">
                     <p><strong>Posso remarcar meu horário?</strong></p>
                 </div>
                 <div class="resposta">
@@ -238,7 +248,8 @@
                     <p><strong>Se eu for aí no dia do meu aniversário, ganharei um pedaço de bolo de graça??</strong></p>
                 </div>
                 <div class="resposta">
-                    <p>Sim! Você ganhará um bolo temático de capivara!!!🎂</p>
+                    <p>Sim! Você ganhará um bolo temático de capivara!!!🎂 Ou você ganha um
+                    desconto no aluguel de uma capivara adulta.</p>
                 </div>
 
                 </div>
@@ -278,27 +289,30 @@
         <form action="dadosForm.html" method="post" class="formulario">
 
             <h2>Cadastro - CapyVibes</h2>
+
             <label><strong>Nome completo:</strong></label>
             <input type="text" name="Nome" id="caixa-e" required><br>
             <label><strong>Email:</strong></label>
             <input type="text" name="Email" id="caixa-e" required><br>
             <label><strong>Telefone:</strong></label>
-            <input type="number" name="Telefone" id="caixa-e" required><br>
-            <label id="servico"><strong>Qual serviço deseja contratar?</strong></label><br>
-            <input type="checkbox" name="meditacao" id="caixa">Meditação Premium<br>
-            <input type="checkbox" name="carro" id="caixa">Capivara Express<br>
-            <input type="checkbox" name="cafe" id="caixa">CapyCafé<br>
+            <input type="number" name="Telefone" id="caixa-phone" required><br>
+            <label class="servico"><strong>Qual serviço deseja contratar?</strong></label><br>
+            <input type="checkbox" name="meditacao" id="caixa"><label class="bottom-form">Meditação Premium</label><br>
+            <input type="checkbox" name="carro" id="caixa"><label>Capivara Express</label><br>
+            <input type="checkbox" name="cafe" id="caixa"><label>CapyCafé</label><br>
             <label><strong>Data desejada:</strong></label>
-            <input type="date" name="data" id="data"><br>
+            <input type="date" name="data" id="data" required><br>
             <label><strong>Horário:</strong></label>
-            <input type="time" name="hora" id="horario"><br>
+            <input type="time" name="hora" id="horario" re><br>
             <label><strong>Comentário:</strong></label><br>
-              <textarea id="comentario" rows="3" cols="30" name="comentário"></textarea><br>
+              <textarea id="comentario" rows="3" cols="55" name="comentário"></textarea><br>
             <label><strong>Termos:</strong></label><br>
             <input type="checkbox" name="termo" id="termos" required><label>Concordo com os termos de uso e política de privacidade</label><br>
 
-            <button type="submit" class="btn_form">Quero relaxar com uma capivara🦦</button><br>
-            <button type="reset" class="btn_form">Limpar cadastro🗑️</button>
+            <div class="botoes">
+               <button type="submit" class="btn_form">Quero relaxar com uma capivara🦦</button>
+               <button type="reset" class="btn_form">Limpar cadastro🗑️</button>
+            </div>
         </form>
 
         <!-- BOTÃO DE VOZ E LIBRAS -->

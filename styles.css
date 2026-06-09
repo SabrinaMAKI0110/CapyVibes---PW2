@@ -13,6 +13,7 @@ body {
     background-color: #ffeedf;
 }
 
+/*↓↓↓para aumentar o padding da página (dos lados)*/
 .container{
     max-width: 1600px;
     margin: 0 auto;
@@ -85,15 +86,20 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
-    height: 650px;
+    height: 670px;
 }
+/*↑↑↑ o height de cima é para aumentar a imagem do hero */
 
 .conteudo-hero h1{
     margin-bottom: 3rem;
+    font-size: 2.3rem;
+}
+
+.conteudo-hero p{
+    font-size: 1.2rem;
 }
 
 /* SERVIÇOS */
-
 .section-title {
     text-align: center;
     font-size: 2.5rem;
@@ -105,6 +111,7 @@ body {
 .foto-card{
     display: block;
     margin: 0 auto;
+    object-fit: cover;
 }
 
 .cards { 
@@ -146,6 +153,7 @@ body {
     text-align: center;
     margin-bottom: 5px;
     font-weight: bold;
+    margin-top: 0.7rem;
 }
 
 .conteudo-card img{
@@ -168,6 +176,7 @@ body {
     color:#8a4c34;
     padding: 1rem 0 0 0;
     font-size: 1.3rem;
+    margin-bottom: 0.7rem;
 }
 
 /* PROMOCÕES */
@@ -278,13 +287,17 @@ body {
 
 .avaliacao p{
     margin: 5px 10px;
-    font-size: 0.95rem;
+    font-size: 1.2rem;
     line-height: 1.4;
 }
 
 .nome-cliente{
     font-weight: bold;
     margin-top: auto;
+}
+
+.data-hora{
+    color: #757575;
 }
 
 .foto-cliente{
@@ -303,14 +316,6 @@ body {
     object-fit: cover;
 }
 
-.call{
-    text-align: center;
-    font-size: 2.6rem;
-    color: #68280e;
-    margin-bottom: 10px;
-    margin-top: 30px;
-}
-
 /* DUVIDAS - FAQ */
 .duvidas{
     display: flex;
@@ -323,7 +328,7 @@ body {
     text-align: center;
     font-size: 1.3rem;
     width: 80rem;
-    height: 40rem;
+    height: 50rem;
     background-color: #dbc3b1;
     border-radius: 2rem;
     box-shadow: 0 4px 6px rgba(77, 77, 77, 0.5);
@@ -343,6 +348,10 @@ body {
     text-align: left;
 }
 
+.resposta-g{
+    height: 6rem;
+}
+
 .perguntas{
     margin-bottom: 0.6rem;
     text-align: left;
@@ -356,10 +365,9 @@ body {
     margin-top: 10px;
 }
 
-
 /* SOBRE A EMRPRESA */
 .info{
-    padding: 2rem 1.5rem;
+    padding: 4rem 1.5rem;
     padding-bottom: 0;
 }
 
@@ -399,80 +407,108 @@ body {
 }
 
 /* FORMULÁRIO */
+.call{
+    text-align: center;
+    font-size: 2.6rem;
+    color: #68280e;
+    margin-bottom: 5px;
+    margin-top: 2.5rem;
+}
 
 .formulario{
     background-color: #b8caca;
-    padding: 25px;
+    padding: 1.5rem 3rem;
     border-radius: 15px;
-    max-width: 1000px;
-    margin: 2rem auto; 
-    
+    max-width: 1100px;
+    margin: 2rem auto;
 }
 
 .formulario label{
-    font-size: 1.5rem;
-}
-
-button[type="submit"] {
-    background-color: #b9977c;
-    color: black;
-    font-weight: bold;
-    border-radius: 20px;
-    padding: 0.2rem 0.6rem;
-    margin-bottom: 0.5rem;  
-}
-        
-button[type="reset"] {
-    background-color: #b9977c;
-    color: black;
-    font-weight: bold;
-    border-radius: 20px;
-    padding: 0.2rem 0.6rem;  
+    font-size: 1.7rem;
 }
 
 #termos{
-    margin-bottom: 3rem;
-    height: 1rem;
-    width: 1rem;
+    margin-bottom: 5rem;
+    height: 1.5rem;
+    width: 1.5rem;
     margin-right: 0.5rem;
 }
 
 .formulario input{
-    margin-bottom: 0.7rem;
+    margin-bottom: 1rem;
     border-radius: 8px;
 }
 
 #comentario{
-    margin-bottom: 1.5rem;
+    margin-bottom: 3rem;
+    border-radius: 8px;
+    font-size: 1.4rem;
+    padding: 0.7rem;
 }
 
 #horario{
-    margin-bottom: 1rem;
+    margin-bottom: 1.7rem;
+    width: 200px;
+    height: 37px;
+    font-size: 1.5rem;
+    padding: 10px;
 }
 
 #data{
-    margin-bottom: 1.3rem;
-    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    margin-top: 1.7rem;
+    width: 200px;
+    height: 37px;
+    font-size: 1.5rem;
+    padding: 10px;
 }
 
 .formulario h2{
     margin-bottom: 1.5rem;
-}
-
-.formulario textarea{
-    border-radius: 8px;
+    font-size: 2rem;
+    color: #1d1d1d;
 }
 
 #caixa-e{
-    height: 1.4rem;
-    width: 15rem;
+    height: 2rem;
+    width: 37rem;
     padding: 0 0 0 0.5rem;
+    margin-bottom: 1.4rem;
+    font-size: 1.3rem;
+}
+
+#caixa-phone{
+    height: 2rem;
+    width: 37rem;
+    padding: 0 0 0 0.5rem;
+    margin-bottom: 1.9rem;
 }
 
 #caixa{
-    height: 1rem;
-    width: 1rem;
+    height: 1.5rem;
+    width: 1.5rem;
     margin-right: 0.5rem;
+}
+
+.botoes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.btn_form{
+    background-color: #bc9d85;
+    color: black;
+    font-weight: bold;
+    border-radius: 20px;
+    padding: 0.2rem 0.6rem;
+    margin-bottom: 3rem;
+    height: 2.8rem;
+}
+
+.formulario button{
+    font-size: 1.3rem;
 }
 
 /* BOTÃO DE VOZ E LIBRAS */
@@ -511,6 +547,7 @@ button[type="reset"] {
 .rodape{
     background-color: #8a4c34;
     padding: 1rem;
+    margin-top: 5rem;
 }
 
 .footer-content{
@@ -527,6 +564,7 @@ button[type="reset"] {
     color: white;
     margin-bottom: 1rem;
     margin-left: 5rem;
+    font-size: 1.2rem;
 }
 
 .footer-section h4{
