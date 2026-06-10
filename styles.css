@@ -60,7 +60,20 @@ body {
 .logo{
     width: 12rem;
     height: 3rem;
-    margin-right: 35rem;
+    
+}
+
+.logoCapy{
+    width: 4.5rem;
+    height: 4.5rem;
+}
+
+.logos{
+    display: flexbox;
+    flex-direction: row;
+    align-items: absolute;
+    margin-right: 550px;
+    margin-top: -10px;
 }
 
 .botao{
