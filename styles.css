@@ -1,5 +1,15 @@
 /* HEADER e NAV */
 
+
+* {
+    outline: 1px solid red;
+}
+
+
+
+
+
+
 *{
     margin: 0;
     padding: 0;
@@ -15,8 +25,10 @@ body {
 
 /*↓↓↓para aumentar o padding da página (dos lados)*/
 .container{
+    width: auto; 
     max-width: 1600px;
     margin: 0 auto;
+    display: block;
     padding: 1rem;
 }
 
@@ -27,12 +39,15 @@ body {
     top: 0;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
     z-index: 1000;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .menu{
@@ -56,6 +71,7 @@ body {
 .logo{
     width: 12rem;
     height: 3rem;
+    margin-right: 35rem;
 }
 
 .botao{
@@ -64,7 +80,7 @@ body {
     border-radius: 2rem;
     border-color: #598e8e;
     background-color: #b6e5e5;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-family: 'Lucida Sans Regular';
     margin-top: 2rem;
     cursor: pointer;
@@ -182,6 +198,12 @@ body {
 /* PROMOCÕES */
 .promocoes{
     padding: 1.5rem 0 1rem 0;
+    
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
 }
 
 .promo-title {
@@ -195,14 +217,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 0;
 }
 
 .promo-card1 {
     margin-right: -240px;
     margin-bottom: 50px;
     position: relative;
-    transform: rotate(-5deg);
+    transform: rotate(-3deg);
 }
 
 .promo-card2 {
@@ -216,13 +237,14 @@ body {
     margin-right: 15px;
     margin-bottom: 50px;
     position: relative;
-    transform: rotate(5deg);
+    transform: rotate(3deg);
 }
 
 .texto-promo{
-    position: absolute; 
-    bottom: 200px;
-    left: 150px;
+    bottom: 140px;
+    left: 140px;
+    position: absolute;
+    width: 55%;
     text-align: center;
 }
 
@@ -236,12 +258,23 @@ body {
     display: block;
     width: 630px;
     height: auto;
+    bottom: 35px;
 }
 
 .promo-card3 img {
     display: block;
     width: 610px;
     height: auto;
+}
+
+.texto-promo h4{
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+.texto-promo p{
+    font-size: 1.3rem;
+    line-height: 1.4;
 }
 
 /* BENEFICIOS */
@@ -365,13 +398,14 @@ body {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    width: 100%;
 }
 
 .perg-resp{
     text-align: center;
     font-size: 1.3rem;
-    width: 80rem;
-    height: 50rem;
+    width: 100%;
+    height: auto;
     background-color: #dbc3b1;
     border-radius: 2rem;
     box-shadow: 0 4px 6px rgba(77, 77, 77, 0.5);
@@ -379,8 +413,8 @@ body {
 }
 
 .resposta{
-    height: 4rem;
-    width: 75rem;
+    height: auto;
+    width: 100%;
     background-color: #f8f8f8;
     border-color: #333;
     border-radius: 1rem;
@@ -392,12 +426,14 @@ body {
 }
 
 .resposta-g{
-    height: 6rem;
+    height: auto;
+    width: 100%;
 }
 
 .perguntas{
     margin-bottom: 0.6rem;
     text-align: left;
+    width: 100%;
 }
 
 .duv-titulo{
@@ -483,10 +519,18 @@ body {
 }
 
 #comentario{
+    margin-top: 0.5rem;
     margin-bottom: 3rem;
     border-radius: 8px;
     font-size: 1.4rem;
     padding: 0.7rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.localizacao{
+    display: block;
+    margin-bottom: 2px;
 }
 
 #horario{
@@ -518,6 +562,8 @@ body {
     padding: 0 0 0 0.5rem;
     margin-bottom: 1.4rem;
     font-size: 1.3rem;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 #caixa-phone{
@@ -525,6 +571,8 @@ body {
     width: 37rem;
     padding: 0 0 0 0.5rem;
     margin-bottom: 1.9rem;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 #caixa{
@@ -568,6 +616,7 @@ body {
     background-color: #62504b;
     transition: background-color 0.3s;
     transition: scale 0.4s;
+    z-index: 400;
 }
 
 .btn-ajuda:hover{
@@ -606,7 +655,7 @@ body {
     min-width: 50px;
     color: white;
     margin-bottom: 1rem;
-    margin-left: 5rem;
+    margin-left: 1.5rem;
     font-size: 1.2rem;
 }
 
